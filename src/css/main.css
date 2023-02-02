@@ -2,3 +2,31 @@
     background-color: rgba(82, 82, 82, 0.479);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.nav-pos-header {
+    text-align: right;
+}
+
+.about_me_first {
+    text-align: center;
+}
+
+.csharp_science {
+    text-align: right;
+}
+
+.python_science {
+    text-align: left;
+}
+
+.web_science {
+    text-align: center;
+}
+
+.game_info {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
