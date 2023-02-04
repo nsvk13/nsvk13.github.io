@@ -4,7 +4,7 @@
 }
 
 .nav-pos-header {
-    text-align: right;
+    text-align: center;
 }
 
 .about_me_first {
@@ -12,11 +12,11 @@
 }
 
 .csharp_science {
-    text-align: right;
+    text-align: center;
 }
 
 .python_science {
-    text-align: left;
+    text-align: center;
 }
 
 .web_science {
