@@ -1,32 +1,11 @@
 * {
-    background-color: rgba(82, 82, 82, 0.479);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(85, 86, 87, 0.178);
 }
 
-.nav-pos-header {
-    text-align: center;
-}
+/*
+Header Container for short information
+*/
 
-.about_me_first {
-    text-align: center;
-}
-
-.csharp_science {
-    text-align: center;
-}
-
-.python_science {
-    text-align: center;
-}
-
-.web_science {
-    text-align: center;
-}
-
-.game_info {
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
+.container {
+    margin: auto;
 }
