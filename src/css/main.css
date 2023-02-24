@@ -1,11 +1,37 @@
 * {
-    background-color: rgba(85, 86, 87, 0.178);
+  background-color: rgba(75, 72, 72, 0.205);
 }
 
-/*
-Header Container for short information
-*/
+body {
+    font-family: 'Inter', sans-serif;
+  }
 
-.container {
-    margin: auto;
+/*   .section-heading {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+  }
+
+  .section-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+ */
+
+.header container {
+  margin: auto;
+}
+
+.header text bar {
+  margin: auto;
+}
+
+.header text text {
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
 }
