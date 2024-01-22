@@ -1,109 +1,75 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikita Simakin</title>
-    <link rel="stylesheet" href="/source/css/fonts.css">
-    <link rel="stylesheet" href="/source/css/main.css">
-    <script src="/source/js/lib/anime.min.js"></script>
+    <title>nsvk</title>
+    <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
+
     <header>
-      <nav class="navbar">
-        <div class="tab-container">
-          <div class="tab-link">
-            <a href="#home" class="home_item" data-lang-key="home">Home</a>
-            <a href="#portfolio" class="portfolio_item" data-lang-key="portfolio">Portfolio</a>
-            <a href="#inspired" class="inspired_item" data-lang-key="inspired">Inspired</a>
-            <a href="#contact" class="contact_item" data-lang-key="contact">Contact</a>
-          </div>
+        <div class="navbar">
+            <div class="nav-container">
+                <a href="#" onclick="openTab('bio')">bio</a>
+                <a href="#" onclick="openTab('knowledges')">knowledges</a>
+                <a href="#" onclick="openTab('portfolio')">portfolio</a>
+                <a href="#" onclick="openTab('other')">other</a>
+            </div>
         </div>
-      </nav>
     </header>
 
     <main>
-      <div class="bio-container">
-        <img src="/assets/images/avatar.jpg" id="bio-avatar" onmouseover="startRotate()" onmouseout="stopRotate()">
-        <h2 id="bio-text">Nikita S.</h2>
-        <img src="/assets/images/sueta.gif" alt="sueta" id="gif-image">
-      </div>
-      <div class="tab-item">
-        <!-- home tab -->
-        <div id="home" class="home_item">
-          <hr>
-          <section>
-            <!-- about me-->
-            <p>
-              <h3>Немного обо мне</h3>
-              Меня зовут Никита, я занимаюсь программирование уже более 7-ми лет, а непрерывно с 2021.
-              <br>Мне интересно много областей, но я сосоредоточился на Fullstack-разработке.
-              <br>В свободное от программирования время я занимаюсь разработкой Minecraft-проектов.
-            </p>
-            <!-- connect me -->
-            <p>
-              <h3>Связь со мной</h3>
-              <a href="https://t.me/nsvk13" target="_blank">Telegram</a>
-              <a href="https://vk.com/nsvk13" target="_blank">VK</a>
-              <a href="https://github.com/nsvk13" target="_blank">GitHub</a>
-            </p>
-            <hr>
-            <!-- tech stack -->
-            <p>
-              <h3>Стек технологий</h3>
-              <b>Frontend:</b> TypeScript, Vue, React, Bootstrap, AnimeJS, TailwindCSS
-              <br><b>Backend:</b> NodeJS, Flask, Django, Django Rest Framework, FastAPI
-              <br><b>DevOps:</b> NGINX, IPTables, L3/L7-proto, Apache, Docker, DockerSwarm, Git
-              <br><b>Other:</b> Disnake, Aiogram, BeautifulSoup4/requests
-              <br><b>Want to:</b> Go, Java (just bukkit & spigot api)
-            </p>
-            <!-- projects -->
-            <p>
-              <h3>Немного про мои проекты</h3>
-              <b>Hodwini</b> — это мой текущий Minecraft-проект.
-              <br><b>Leak Anonym</b> — это мой форум.
-              <b></b>
-            </p>
-            <hr>
-          </section>
-        </div>
+        <div class="row">
+            <div class="tab-container" id="tabs-container">
 
-        <!-- portfolio tab -->
-        <div id="portfolio" class="portfolio_item">
-          <section>
-            <h2>123</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eaque, reiciendis fugit aliquam voluptatibus qui ad sit itaque quod unde natus repellendus vero beatae. Deserunt rerum sequi repellat recusandae. Numquam.
-            </p>
-          </section>
-        </div>
+                <!-- bio tab container -->
+                <div id="bio" class="tab-content">
+                    <section>
+                        <h4>about me</h4>
+                        <p>
+                            I'm Nikita, I'm a Fullstack or Product developer from Korolev, Russia.
+                            <br>Get ready, there's a cannon coming up: I specialize in building web applications, desktop applications,
+                            <br>using with: <i>JavaScript</i>, <i>Vue</i>, <i>Electron</i>, <i>Node</i>, <i>Python</i>.
+                            <br>In addition I specialize in product management, Minecraft server development, Linux Administration.
+                            <br>I also love extreme sports, and unauthorized hacking.
+                        </p>
+                        <h4>inspired</h4>
+                        <p>
+                            <b>living:</b> people, nature, bike, thougs, music, books.
+                            <br><b>people:</b> friends, girl-friend, elon musk, oleg tinkoff, steve jobs.
+                            <br><b>business:</b> e-services, scalability, product management.
+                            <br><b>music:</b> <i>axius link, biv, ivoxygen, kizaru, ezekiel, skrillex, lorn, husky, the prodigy,
+                            <br>lizer, scarlxrd, fredbydredd, cain, tri dnya dojdya, summer of haze, instasamka, kute, 10age.</i>
+                            <br><b>books:</b> <i>Henri Chanier: The Moth, Stephen Covey: The Seven Habits of Highly Effective People,
+                            <br>Kevin Mitnick: The art of deception, or more..</i>
+                        </p>
+                    </section>
+                </div>
 
-        <!-- inspired tab -->
-        <div id="inspired" class="inspired_item">
-          <section>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, illo.
-            </p>
-          </section>
-        </div>
+                <!-- knowledges tab container -->
+                <div id="knowledges" class="tab-content">
+                    <p>Knowledges content goes here.</p>
+                </div>
 
-        <!-- contact tab -->
-        <div id="contact" class="contact_item">
-          <section>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iure.
-            </p>
-          </section>
-        </div>
+                <!-- portfolio tab container -->
+                <div id="portfolio" class="tab-content">
+                    <p>Portfolio content goes here.</p>
+                </div>
 
-      </div>
+                <!-- other tab container-->
+                <div id="other" class="tab-content">
+                    <p>Other content goes here.</p>
+                </div>
+
+            </div>
+        </div>
     </main>
-
     <footer>
-      <div class="content">
-        <h3>All rights reversed.</h3>
-      </div>
+
     </footer>
-    <script src="/source/js/main.js"></script>
+    
+    <script src="anime.min.js"></script>
+    <script src="/src/js/index.js"></script>
 </body>
 </html>
