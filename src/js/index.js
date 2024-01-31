@@ -77,7 +77,7 @@ const TEXTS = {
     ],
     inspired: [
         `living:`,
-        `people, nature, extreme sport, bike, thoughts, music.`,
+        `people, nature, extreme sport, travel, thoughts, music.`,
         `people:`,
         `friends, family, pavel durov, oleg tinkoff, elon musk.`,
         `business:`,
