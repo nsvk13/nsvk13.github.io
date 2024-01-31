@@ -67,7 +67,7 @@ const TEXTS = {
         `technologies:`,
         `web, desktop, web3, cryptography, data processing.`,
         `langs:`,
-        `nodejs, python (which i hate btw).`,
+        `nodejs, electronjs, python (which i hate btw).`,
         `data processing:`,
         `sql, mongodb, grafana, postgresql, redis.`,
         `devops:`,
