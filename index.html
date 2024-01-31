@@ -1,75 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nsvk</title>
-    <link rel="stylesheet" href="/src/css/main.css">
-</head>
-<body>
-
-    <header>
-        <div class="navbar">
-            <div class="nav-container">
-                <a href="#" onclick="openTab('bio')">bio</a>
-                <a href="#" onclick="openTab('knowledges')">knowledges</a>
-                <a href="#" onclick="openTab('portfolio')">portfolio</a>
-                <a href="#" onclick="openTab('other')">other</a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>nsvk.xyz</title>
+        <link href="/src/css/fonts.css" rel="stylesheet">
+        <link href="src/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <audio src="src/music/Nedaj - CODE.opus" id="audio" loop></audio>
+        <div id="container" class="container">
+            <div class="bio-container">
+                <img src="assets/avatar.jpg" alt="Avatar" width="136" height="31">
+                <p class="bio">~ hard work pays off ~</p>
+                <div class="link-container" style="width: 100%">
+                    <p id="vol-reduce" class="control">-</p>
+                    <p id="control" class="control">play</p>
+                    <p id="vol-add" class="control">+</p>
+                </div>
+            </div>
+            <div id="text-container" style="display: none;">
+                <p id="text">text</p>
+                <a href="#" id="back" class="link text" style="color: transparent">&lt;back</a>
+            </div>
+            <div id="btn-container" class="link-container">
+                <a href="tg://resolve?domain=nsvk13" class="link">telegram</a>
+                <a href="tg://resolve?domain=nsvkxyz" class="link">blog</a>
+                <a href="https://github.com/nsvk13" target="_blank" class="link">github</a>
+                <div class="divider"></div>
+                <a id="bio" href="#" class="link text">bio</a>
+                <a id="knowledge" href="#" class="link text">knowledge</a>
+                <a id="inspired" href="#" class="link text">inspired</a>
             </div>
         </div>
-    </header>
-
-    <main>
-        <div class="row">
-            <div class="tab-container" id="tabs-container">
-
-                <!-- bio tab container -->
-                <div id="bio" class="tab-content">
-                    <section>
-                        <h4>about me</h4>
-                        <p>
-                            I'm Nikita, I'm a Fullstack or Product developer from Korolev, Russia.
-                            <br>Get ready, there's a cannon coming up: I specialize in building web applications, desktop applications,
-                            <br>using with: <i>JavaScript</i>, <i>Vue</i>, <i>Electron</i>, <i>Node</i>, <i>Python</i>.
-                            <br>In addition I specialize in product management, Minecraft server development, Linux Administration.
-                            <br>I also love extreme sports, and unauthorized hacking.
-                        </p>
-                        <h4>inspired</h4>
-                        <p>
-                            <b>living:</b> people, nature, bike, thougs, music, books.
-                            <br><b>people:</b> friends, girl-friend, elon musk, oleg tinkoff, steve jobs.
-                            <br><b>business:</b> e-services, scalability, product management.
-                            <br><b>music:</b> <i>axius link, biv, ivoxygen, kizaru, ezekiel, skrillex, lorn, husky, the prodigy,
-                            <br>lizer, scarlxrd, fredbydredd, cain, tri dnya dojdya, summer of haze, instasamka, kute, 10age.</i>
-                            <br><b>books:</b> <i>Henri Chanier: The Moth, Stephen Covey: The Seven Habits of Highly Effective People,
-                            <br>Kevin Mitnick: The art of deception, or more..</i>
-                        </p>
-                    </section>
-                </div>
-
-                <!-- knowledges tab container -->
-                <div id="knowledges" class="tab-content">
-                    <p>Knowledges content goes here.</p>
-                </div>
-
-                <!-- portfolio tab container -->
-                <div id="portfolio" class="tab-content">
-                    <p>Portfolio content goes here.</p>
-                </div>
-
-                <!-- other tab container-->
-                <div id="other" class="tab-content">
-                    <p>Other content goes here.</p>
-                </div>
-
-            </div>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
-    
-    <script src="anime.min.js"></script>
-    <script src="/src/js/index.js"></script>
-</body>
+        <script src="/src/js/index.js"></script>
+    </body>
 </html>
